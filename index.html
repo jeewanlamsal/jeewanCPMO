@@ -1,1 +1,39 @@
-<p>hellow world</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <form action="" method="get">
+        <h1 class="main_heading">Payment Form</h1>
+        <h2>contact Information</h2>
+        <p>Name: <input type"text" name="name" required></p>
+       <fieldset>
+        <legend>Gender</legend>
+        <p>Male <input type="radio" name="gender" id="male"></p>
+        <p>female <input type="radio" name="gender" id="female"></p>
+       </fieldset>
+       <p>Address: <textarea name="address" id="address" cols="50" rows="5"></textarea></p>
+       <p>Email: <input type="email" name="email" id="email" required></p>
+       <p>Pincode: <input type="number" name="pincode" id="pincode"></p>
+       <h2>Payment Information</h2>
+       <p>Card Type: <select name="card_type" id="card_type">
+        <option value="">--Select a card type--</option>
+        <option value="Visa">Visa</option>
+        <option value="rupay">rupay</option>
+        <option value="master card">master card</option>
+       </select></p>
+       <p>
+        card number <input type="number" name="card_number" id="card_nymber">
+       </p>
+       <p>Expiration Date: <input type="date" name="exp_date" id="exp_date"></p>
+       <p>CVV <input type="password" name="CVV" id="CVV"></p>
+       <input type="submit" value="Pay Now">
+    </form>
+    </div>
+</body>
+</html>
